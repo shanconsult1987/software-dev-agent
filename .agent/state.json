@@ -1,0 +1,27 @@
+{
+  "mission_id": "DEV-001",
+  "status": "blocked",
+  "current_phase": "validation",
+  "completed_phases": [
+    "research",
+    "plan",
+    "implementation",
+    "tests",
+    "diff_review",
+    "security_checks"
+  ],
+  "next_phase": "evaluation",
+  "last_test_status": "passed: 11 unittest tests",
+  "last_evaluation": "blocked: eval/evaluate.py is missing",
+  "task": "Add incident priority endpoint",
+  "decisions": {
+    "endpoint": "GET /incidents/<id>/priority",
+    "response": {"id": 1, "priority": "P1"},
+    "priority_rules": {"high": "P1", "medium": "P2"},
+    "status_affects_priority": false
+  },
+  "blockers": [
+    "Required evaluator eval/evaluate.py is missing.",
+    "PR and CI unavailable: local branch has no commits and all project files are untracked."
+  ]
+}

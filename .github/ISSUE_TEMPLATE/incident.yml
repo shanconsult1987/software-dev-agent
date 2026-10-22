@@ -1,0 +1,58 @@
+name: CityOps Incident Change
+description: Request a change to CityOps incident functionality
+title: "[Incident]: "
+labels:
+  - incident
+
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        Describe the required CityOps change.
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What should the software do?
+      placeholder: Describe the desired behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      description: Provide functional requirements.
+      placeholder: |
+        Endpoint:
+        Input:
+        Output:
+        Error behavior:
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: How do we determine that the change is complete?
+      placeholder: |
+        - Existing behavior remains unchanged
+        - Tests pass
+        - Evaluation passes
+        - CI passes
+    validations:
+      required: true
+
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Risk
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: true

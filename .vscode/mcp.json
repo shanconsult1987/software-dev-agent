@@ -1,0 +1,11 @@
+{
+  "servers": {
+    "cityops-tools": {
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        ".github/mcp/server.py"
+      ]
+    }
+  }
+}

@@ -44,3 +44,22 @@ def test_project_health_not_found():
     response = client.get("/projects/999/health")
 
     assert response.status_code == 404
+
+
+def test_project_status():
+    client = app.test_client()
+
+    response = client.get("/projects/1/status")
+
+    assert response.status_code == 200
+    assert response.json["id"] == 1
+    assert response.json["name"] == "Payments API"
+    assert response.json["status"] == "active"
+
+
+def test_project_status_not_found():
+    client = app.test_client()
+
+    response = client.get("/projects/999/status")
+
+    assert response.status_code == 404

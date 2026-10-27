@@ -51,6 +51,19 @@ def get_project_health(project_id):
     return jsonify({"error": "Project not found"}), 404
 
 
+@app.get("/projects/<int:project_id>/status")
+def get_project_status(project_id):
+    for project in PROJECTS:
+        if project["id"] == project_id:
+            return jsonify({
+                "id": project["id"],
+                "name": project["name"],
+                "status": project["status"]
+            })
+
+    return jsonify({"error": "Project not found"}), 404
+
+
 @app.post("/projects")
 def create_project():
     data = request.get_json()

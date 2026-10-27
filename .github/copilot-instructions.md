@@ -2,31 +2,42 @@
 
 ## Purpose
 
-This repository is a minimal software development agent demonstration.
+This repository demonstrates a simple software development agent.
 
-## Development rules
+The agent implements software changes from GitHub Issues.
 
-- Keep the application simple.
-- Use Python.
-- Use Flask for the API.
-- Use pytest for tests.
-- Do not introduce unnecessary frameworks.
-- Every code change must have tests.
-- Do not modify unrelated files.
-- Explain the implementation before making significant changes.
+## Technology
 
-## Quality rules
+- Python
+- Flask
+- pytest
 
-Before completing a task:
+## Development Principles
 
-1. Run all unit tests.
-2. Check for regressions.
-3. Review changed files.
-4. Update documentation when behavior changes.
+1. Keep the application simple.
+2. Make the smallest change required.
+3. Every feature requires tests.
+4. Do not modify unrelated files.
+5. Do not add unnecessary dependencies.
+6. Never add secrets.
+7. Run all tests before completing a task.
+8. Preserve existing API behavior.
 
-## Security rules
+## SDLC
 
-- Never hard-code secrets.
-- Never commit API keys.
-- Validate external input.
-- Keep permissions least-privileged.
+Issue
+→ Plan
+→ Implement
+→ Test
+→ Pull Request
+→ CI
+→ Security
+→ Review
+→ Merge
+→ Deploy
+
+## Testing
+
+Run:
+
+python -m pytest -v

@@ -1,33 +1,36 @@
-# Feature Plan
+# Development Plan
 
 ## Feature
 
-Add deployment risk analysis.
+Project health endpoint.
 
-## Goal
+## Requirement
 
-Allow the development agent to evaluate a proposed software change.
+Provide the health status of a project.
 
-## Input
+## Acceptance Criteria
 
-A textual description of a software change.
+- Existing project returns HTTP 200.
+- Response contains project ID.
+- Response contains project name.
+- Response contains health status.
+- Unknown project returns HTTP 404.
+- Unit tests are required.
 
-## Output
+## Expected Files
 
-A risk classification:
+- app.py
+- tests/test_app.py
 
-- LOW
-- MEDIUM
-- HIGH
+## Validation
 
-## Success Criteria
+python -m pytest -v
 
-1. The feature accepts a change description.
-2. The feature returns a risk level.
-3. Invalid input is rejected.
-4. Unit tests cover the behavior.
-5. CI passes before merge.
+## Completion Criteria
 
-## Human Approval
+The feature is complete when:
 
-HIGH-risk changes require human approval.
+1. The endpoint works.
+2. Unit tests pass.
+3. Existing APIs continue to work.
+4. No unrelated files are modified.

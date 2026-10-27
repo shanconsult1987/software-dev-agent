@@ -3,6 +3,7 @@
 ## Completed Tasks
 
 - Created initial Flask application.
+- Added GET /projects/<project_id>/health, returning project identity and health status.
 
 ## Lessons
 

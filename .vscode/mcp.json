@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "software-dev-agent": {
+      "command": "python",
+      "args": [
+        "mcp/server.py"
+      ]
+    }
+  }
+}

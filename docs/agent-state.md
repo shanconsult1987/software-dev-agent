@@ -6,20 +6,20 @@ Add project health endpoint
 
 ## Status
 
-Planning
+Completed
 
 ## Current Step
 
-Reviewing requirements
+Validation complete
 
 ## Last Test
 
-Not run
+python -m pytest -v — passed
 
 ## Last Action
 
-Read GitHub Issue
+Implemented and verified GET /projects/<project_id>/health
 
 ## Next Action
 
-Inspect application code
+Human review

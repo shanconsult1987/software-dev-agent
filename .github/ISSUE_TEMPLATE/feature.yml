@@ -1,0 +1,21 @@
+name: Feature Request
+description: Request a software change
+title: "[Feature] "
+
+body:
+
+  - type: textarea
+    id: requirement
+    attributes:
+      label: Requirement
+      description: Describe the requested change.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Describe how the change should be validated.
+    validations:
+      required: true

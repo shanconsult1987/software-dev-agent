@@ -28,6 +28,15 @@ Run tests:
 python -m pytest -v
 ```
 
+## MCP server
+
+Start `software-dev-tools` using the VS Code MCP configuration in
+[.vscode/mcp.json](.vscode/mcp.json). It sets `PYTHONPATH` to the workspace root
+so the server can import `app` when launched as a script.
+
+The server provides `list_tasks`, `get_task_details`, and `validate_plan`.
+After changing the configuration, restart the MCP server in VS Code.
+
 ## Architecture
 
 The repository will progressively introduce:

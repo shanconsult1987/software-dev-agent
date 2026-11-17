@@ -1,0 +1,19 @@
+
+{
+  "servers": {
+    "software-dev-tools": {
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/mcp/server.py"
+      ],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    }
+  }
+}

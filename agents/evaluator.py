@@ -69,6 +69,8 @@ if __name__ == "__main__":
     The implementation adds priority validation.
     Supported values are low, medium and high.
     Invalid priority values return an error.
+    Task status validation rejects invalid values
+    with an error.
     The existing JSON and in-memory architecture
     is retained.
     """

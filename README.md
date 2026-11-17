@@ -31,6 +31,8 @@ python -m pytest -v
 CI runs `python -m agents.evaluator` as its final step after the tests pass.
 The evaluator prints a report and writes `data/evaluation_report.json`;
 failed evaluation checks do not currently fail CI.
+The demonstration text covers priority validation, status validation, and
+preserving JSON/in-memory storage.
 
 Resume agent execution from the repository root:
 

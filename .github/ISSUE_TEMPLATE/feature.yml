@@ -1,0 +1,32 @@
+
+name: Feature Request
+description: Request a software enhancement
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: requirement
+    attributes:
+      label: Requirement
+      description: Describe the feature.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Define expected outcomes.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Risk
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: true

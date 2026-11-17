@@ -13,16 +13,18 @@ def test_get_tasks():
     assert len(get_tasks()) >= 2
 
 
-def test_create_task():
-    task = create_task("Build API", "high")
+@pytest.mark.parametrize("priority", ["low", "medium", "high"])
+def test_create_task(priority):
+    task = create_task("Build API", priority)
 
     assert task["title"] == "Build API"
-    assert task["priority"] == "high"
+    assert task["priority"] == priority
 
 
-def test_invalid_priority():
+@pytest.mark.parametrize("priority", ["urgent", None, [], {}, 1])
+def test_invalid_priority(priority):
     with pytest.raises(ValueError):
-        create_task("Invalid task", "urgent")
+        create_task("Invalid task", priority)
 
 
 def test_update_status():

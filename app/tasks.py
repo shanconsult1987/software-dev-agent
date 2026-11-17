@@ -32,7 +32,7 @@ def create_task(title, priority="medium"):
     if not isinstance(title, str) or not title.strip():
         raise ValueError("Task title is required")
 
-    if priority not in VALID_PRIORITIES:
+    if not isinstance(priority, str) or priority not in VALID_PRIORITIES:
         raise ValueError("Invalid priority")
 
     task = {

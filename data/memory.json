@@ -1,0 +1,25 @@
+{
+  "repository": "software-dev-agent",
+  "decisions": [
+    {
+      "id": "DEC-001",
+      "decision": "Use Python and pytest",
+      "reason": "Keep the workshop minimal"
+    },
+    {
+      "id": "DEC-002",
+      "decision": "Use JSON for agent state",
+      "reason": "Avoid database dependencies"
+    },
+    {
+      "id": "DEC-003",
+      "decision": "Priority validation occurs during task creation",
+      "reason": "Reject invalid values at the application boundary"
+    }
+  ],
+  "known_constraints": [
+    "Do not commit secrets",
+    "Do not merge automatically",
+    "Do not modify workflows without approval"
+  ]
+}

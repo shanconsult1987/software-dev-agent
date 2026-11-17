@@ -1,0 +1,31 @@
+{
+  "total": 3,
+  "passed": 2,
+  "failed": 1,
+  "pass_rate": 0.6666666666666666,
+  "results": [
+    {
+      "requirement": "Add task priority validation",
+      "passed": true,
+      "missing_terms": [],
+      "score": 1.0,
+      "test_id": "EVAL-001"
+    },
+    {
+      "requirement": "Reject invalid task status",
+      "passed": false,
+      "missing_terms": [
+        "status"
+      ],
+      "score": 0.6666666666666666,
+      "test_id": "EVAL-002"
+    },
+    {
+      "requirement": "Do not introduce a database",
+      "passed": true,
+      "missing_terms": [],
+      "score": 1.0,
+      "test_id": "EVAL-003"
+    }
+  ]
+}

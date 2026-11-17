@@ -28,6 +28,19 @@ Run tests:
 python -m pytest -v
 ```
 
+CI runs `python -m agents.evaluator` as its final step after the tests pass.
+The evaluator prints a report and writes `data/evaluation_report.json`;
+failed evaluation checks do not currently fail CI.
+
+Resume agent execution from the repository root:
+
+```powershell
+python .\scripts\resume-agent.py
+```
+
+The script imports the repository's `agents` package directly and reads
+`data/agent_state.json` and `data/memory.json` relative to the working directory.
+
 ## MCP server
 
 Start `software-dev-tools` using the VS Code MCP configuration in

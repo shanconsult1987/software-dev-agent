@@ -1,0 +1,33 @@
+
+{
+  "tests": [
+    {
+      "id": "EVAL-001",
+      "requirement": "Add task priority validation",
+      "expected_terms": [
+        "priority",
+        "low",
+        "medium",
+        "high",
+        "invalid"
+      ]
+    },
+    {
+      "id": "EVAL-002",
+      "requirement": "Reject invalid task status",
+      "expected_terms": [
+        "status",
+        "validation",
+        "error"
+      ]
+    },
+    {
+      "id": "EVAL-003",
+      "requirement": "Do not introduce a database",
+      "expected_terms": [
+        "json",
+        "in-memory"
+      ]
+    }
+  ]
+}

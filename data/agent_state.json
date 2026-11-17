@@ -1,0 +1,11 @@
+{
+  "issue_id": 1,
+  "task": "Add task priority",
+  "status": "planning",
+  "current_agent": "Planner",
+  "completed_agents": [],
+  "plan": null,
+  "approval_status": "pending",
+  "last_checkpoint": "Plan created",
+  "retry_count": 0
+}

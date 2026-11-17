@@ -1,11 +1,16 @@
 {
   "issue_id": 1,
-  "task": "Add task priority",
-  "status": "planning",
-  "current_agent": "Planner",
-  "completed_agents": [],
+  "task": "Add low, medium and high priority to the task application.",
+  "status": "completed",
+  "current_agent": null,
+  "completed_agents": [
+    "planner",
+    "developer",
+    "reviewer",
+    "summary"
+  ],
   "plan": null,
   "approval_status": "pending",
-  "last_checkpoint": "Plan created",
+  "last_checkpoint": "orchestration_completed",
   "retry_count": 0
 }
